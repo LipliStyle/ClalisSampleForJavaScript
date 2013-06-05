@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+	<head>
+	<title>Clalis HTML5+Javascriptサンプル</title>
+	<script type="text/javascript" src="clalisSample.js" ></script>
+	</head>
+	<body  onLoad="init();">
+		<div>
+			<h1>Clalis HTML5+Javascriptサンプル</h1>
+			<div>
+				<h3>形態素解析 ClalisMecab</h3>
+				<input type="text" size="50" id="inputClalisMecab" value="">
+				<button onclick="ClalisMecab();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisMecab"></textarea>
+			</div>
+			<div>
+				<h3>形態素解析 ClalisMecabPlus</h3>
+				<input type="text" size="50" id="inputClalisMecabPlus" value="">
+				<button onclick="ClalisMecabPlus();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisMecabPlus"></textarea>
+			</div>
+			<div>
+				<h3>感情付与 ClalisEmotional</h3>
+				<input type="text" size="50" id="inputClalisEmotional" value="">
+				<button onclick="ClalisEmotional();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisEmotional"></textarea>
+			</div>
+			<div>
+				<h3>口調変換 ClalisTone</h3>
+				<input type="text" size="50" id="inputClalisTone" value="">
+				<input type="text" size="50" id="inputClalisToneUrl" value="">
+				<button onclick="ClalisTone();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisTone"></textarea>
+			</div>
+			<div>
+				<h3>口調変換+感情付与 ClalisToneEmotional</h3>
+				<input type="text" size="50" id="inputClalisToneEmotional" value="">
+				<input type="text" size="50" id="inputClalisToneEmotionalUrl" value="">
+				<button onclick="ClalisToneEmotionnal();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisToneEmotional"></textarea>
+			</div>
+			<div>
+				<h3>Web日本語抽出 ClalisWebExtractJp</h3>
+				<input type="text" size="50" id="inputClalisWebExtractJp" value="">
+				<button onclick="ClalisWebExtractJp();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisWebExtractJp"></textarea>
+			</div>
+			<div>
+				<h3>Web日本語文章抽出 ClalisWebExtractJpSentenceList</h3>
+				<input type="text" size="50" id="inputClalisWebExtractJpSentenceList" value="">
+				<button onclick="ClalisWebExtractJpSentenceList();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisWebExtractJpSentenceList"></textarea>
+			</div>
+			<div>
+				<h3>Web日本語重要文章抽出 ClalisWebExtractJpSentenceRelevanceList</h3>
+				<input type="text" size="50" id="inputClalisWebExtractJpSentenceRelevanceList" value="">
+				<button onclick="ClalisWebExtractJpSentenceRelevanceList();">起動</button>
+				<br>
+				<textarea cols=170 rows=10 id="resultClalisWebExtractJpSentenceRelevanceList"></textarea>
+			</div>
+		</div>
+	</body>
+</html>
